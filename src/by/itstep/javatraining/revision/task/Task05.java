@@ -62,7 +62,6 @@ public class Task05 {
         a *= n;
         b *= n;
 
-
         if (b >= 200) {
             b %= 200;
             a += 2;
