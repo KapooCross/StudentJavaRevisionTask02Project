@@ -23,6 +23,12 @@ package by.itstep.javatraining.revision.task;
 
 public class Task06 {
     public static boolean task06(int a, int b, int c) {
-        return false;
+//        if((a + b) > c && (a + c) > b && (b + c) > a){
+//            return true;
+//
+//        }
+//        return false;
+//
+        return (a + b) > c && (a + c) > b && (b + c) > a ? true : false;
     }
 }

@@ -38,6 +38,15 @@ package by.itstep.javatraining.revision.task;
 
 public class Task07 {
     public static int task07(int number) {
-        return 0;
+        int rezultat;
+
+        if (number < 0)
+            number *= -1;
+        if (number > 9999)
+            rezultat = 0;
+        else
+            rezultat = (number / 1000) + (number / 100 % 10) + (number / 10 % 10) + (number % 10);
+
+        return rezultat;
     }
 }
