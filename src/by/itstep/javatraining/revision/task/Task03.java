@@ -25,6 +25,31 @@ package by.itstep.javatraining.revision.task;
 
 public class Task03 {
     public static boolean task03(int width, int length, int side) {
-        return false;
+
+//        width = 2;
+//        length = 1;
+//        side = 1;
+
+//        if (width < 0) {
+//            width *= -1;
+//        } else if (length < 0) {
+//            length *= -1;
+//        } else if (side < 0) {
+//            side *= -1;
+//        }
+
+        int pKvad = side * side;
+        int pPig = width * length;
+
+        if (pKvad < 0) {
+            pKvad *= -1;
+        }
+        else if (pPig < 0) {
+            pPig *= -1;
+        }
+
+        System.out.println(pKvad + " " +  pPig);
+        System.out.println(pKvad >= pPig);
+        return pKvad >= pPig;
     }
 }

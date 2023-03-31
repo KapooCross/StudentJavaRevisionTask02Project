@@ -51,8 +51,26 @@ package by.itstep.javatraining.revision.task;
  *
  */
 
+import com.sun.xml.internal.ws.org.objectweb.asm.ClassAdapter;
+
 public class Task05 {
     public static String task05(int a, int b, int n) {
-        return "error";
+        if (a < 0 || b < 0 || n <= 0 || (a == 0 && b == 0)) {
+            return "error";
+        }
+
+        a *= n;
+        b *= n;
+
+
+        if (b >= 200) {
+            b %= 200;
+            a += 2;
+        }
+        if (b >= 100) {
+            b %= 100;
+            a++;
+        }
+        return a + " " + b;
     }
 }

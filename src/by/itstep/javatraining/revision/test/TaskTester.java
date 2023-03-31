@@ -82,27 +82,27 @@ public class TaskTester {
     }
 
     public static String testingTask05() {
-        boolean result = Task05.task05(10, 15, 2) == "20 30"
-                && Task05.task05(4, 25, 8) == "34 0"
-                && Task05.task05(1, 1, 8) == "8 8"
-                && Task05.task05(1, 1, 1) == "1 1"
-                && Task05.task05(0, 25, 3) == "0 75"
-                && Task05.task05(10, 5, 4) == "40 20"
-                && Task05.task05(0, 1, 10) == "0 10"
-                && Task05.task05(1, 0, 10) == "10 0"
-                && Task05.task05(1, 99, 4) == "7 96"
-                && Task05.task05(0, 27, 8) == "2 16"
-                && Task05.task05(2, 0, 5) == "10 0"
-                && Task05.task05(-1, 15, 2) == "error"
-                && Task05.task05(1, -15, 2) == "error"
-                && Task05.task05(1, 15, -2) == "error"
-                && Task05.task05(-1, -15, 2) == "error"
-                && Task05.task05(-1, 15, -2) == "error"
-                && Task05.task05(1, -15, -2) == "error"
-                && Task05.task05(-1, -15, -2) == "error"
-                && Task05.task05(0, 0, 2) == "error"
-                && Task05.task05(1, 15, 0) == "error"
-                && Task05.task05(0, 0, 0) == "error";
+        boolean result = Task05.task05(10, 15, 2).trim().equalsIgnoreCase("20 30")
+                && Task05.task05(4, 25, 8).trim().equalsIgnoreCase("34 0")
+                && Task05.task05(1, 1, 8).trim().equalsIgnoreCase("8 8")
+                && Task05.task05(1, 1, 1).trim().equalsIgnoreCase("1 1")
+                && Task05.task05(0, 25, 3).trim().equalsIgnoreCase("0 75")
+                && Task05.task05(10, 5, 4).trim().equalsIgnoreCase("40 20")
+                && Task05.task05(0, 1, 10).trim().equalsIgnoreCase("0 10")
+                && Task05.task05(1, 0, 10).trim().equalsIgnoreCase("10 0")
+                && Task05.task05(1, 99, 4).trim().equalsIgnoreCase("7 96")
+                && Task05.task05(0, 27, 8).trim().equalsIgnoreCase("2 16")
+                && Task05.task05(2, 0, 5).trim().equalsIgnoreCase("10 0")
+                && Task05.task05(-1, 15, 2).trim().equalsIgnoreCase("error")
+                && Task05.task05(1, -15, 2).trim().equalsIgnoreCase("error")
+                && Task05.task05(1, 15, -2).trim().equalsIgnoreCase("error")
+                && Task05.task05(-1, -15, 2).trim().equalsIgnoreCase("error")
+                && Task05.task05(-1, 15, -2).trim().equalsIgnoreCase("error")
+                && Task05.task05(1, -15, -2).trim().equalsIgnoreCase("error")
+                && Task05.task05(-1, -15, -2).trim().equalsIgnoreCase("error")
+                && Task05.task05(0, 0, 2).trim().equalsIgnoreCase("error")
+                && Task05.task05(1, 15, 0).trim().equalsIgnoreCase("error")
+                && Task05.task05(0, 0, 0).trim().equalsIgnoreCase("error");
 
         return String.format("Task 05 %s", result ? RIGHT : WRONG);
     }
