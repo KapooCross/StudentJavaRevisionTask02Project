@@ -32,6 +32,13 @@ package by.itstep.javatraining.revision.task;
 
 public class Task04 {
     public static boolean task04(int width, int length, int a, int b) {
-        return false;
+        boolean cin;
+
+        if (!(width <= 0 || length <= 0 || a <= 0 || b <= 0))
+            cin = (width > length ? width : length) <= (a > b ? a : b) &&
+                    (width < length ? width : length) <= (a < b ? a : b);
+        else cin = false;
+
+        return cin;
     }
 }
